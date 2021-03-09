@@ -15,10 +15,22 @@ i {
   margin: 0 0.5rem;
 }
 
-.link,
 a {
   text-decoration: none;
 }
+
+a:active {
+  color: yellow;
+}
+
+a:visited {
+  color: none;
+}
+
+li {
+  list-style: none;
+}
+
 /* ---------------------------- */
 /* top nav */
 .top-nav {
@@ -71,6 +83,9 @@ a {
 .main {
   border: mediumorchid 2px solid;
   width: 100vw;
+  display: flex;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
 }
 
 /* side menu */
@@ -115,8 +130,23 @@ a {
   background-color: maroon;
 }
 
+/* subscriptions*/
+.menu-options img {
+  height: 3em;
+  width: auto;
+  border-radius: 50%;
+}
+
 /* ---------------------------- */
 /* main */
+.youtuber-main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 75vw;
+  border: mediumseagreen 2px solid;
+}
 /* header */
 header {
   background-image: url(../img/oliver-spicer-fjord-new-zealand.jpg);
