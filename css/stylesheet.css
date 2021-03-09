@@ -14,7 +14,8 @@ i {
   margin: 0 0.5rem;
 }
 
-.link {
+.link,
+a {
   text-decoration: none;
 }
 /* ---------------------------- */
@@ -64,8 +65,18 @@ i {
   display: block;
 }
 /* ---------------------------- */
+/* main */
 /* side menu */
-
+.side-menu {
+  border: navy dashed 1px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+.side-menu div {
+  border: dashed darkviolet 1px;
+  margin: 0.7em;
+}
 /* drop down menu for "show more" */
 /* .dropd-menu {
   position: relative;
@@ -84,3 +95,9 @@ i {
 .dropd-menu a:hover .dropdown-content {
   display: block;
 } */
+
+/* ---------------------------- */
+/* main */
+/* header */
+/* nav area for youtuber */
+/* clicked on videos */
