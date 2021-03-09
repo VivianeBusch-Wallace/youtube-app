@@ -11,6 +11,7 @@ i {
   /* width: 2em;
   height: 2em; */
   border: springgreen solid 1px;
+  margin: 0 0.5rem;
 }
 
 .link {
@@ -27,32 +28,38 @@ i {
 }
 
 /* youtube home links and menu */
-.yt-home-container {
+.yt-home-container,
+.yt-home-link-container a {
   border: 1px green dashed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* height: inherit; */
-  width: 30vw;
+  /* width: 30vw; */
 }
-
-.yt-home-container a {
+/* .yt-home-link-container a {
+  border: lightcoral solid 1px;
+  display: flex;
+  justify-content: space-between;
+} */
+/* .yt-home-container a {
   display: block;
-}
+} */
 /* searchbar top */
 .big-searchbar-container {
   border: 1px blue dashed;
 }
 /* account links */
-.profile-links {
+.account-nav {
   border: 1px pink dashed;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .profile-pic img {
-  width: 2em;
-  height: 2em;
+  width: 1.1em;
+  height: 1.1em;
   border: steelblue solid 1px;
   border-radius: 50%;
+  display: block;
 }
