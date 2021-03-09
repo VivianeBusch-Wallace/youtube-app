@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="icons-stylesheet"
+      rel="stylesheet"
       href="./fontawesome/fontawesome-free-5.15.2-web/css/all.css"
     />
     <link rel="stylesheet" href="./css/stylesheet.css" />
@@ -13,11 +13,13 @@
   </head>
   <body>
     <section class="top-nav">
-      <div class="yt-home">
+      <div class="yt-home-container">
         <i class="fas fa-bars"></i>
-        <div class="yt-home-link">
-          <i class="fab fa-youtube"></i>
-          <p>YouTubeDE</p>
+        <div class="yt-home-link-container">
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube"></i>
+            <p>YouTubeDE</p>
+          </a>
         </div>
       </div>
       <div class="big-searchbar-container">
@@ -26,9 +28,22 @@
           <button type="submit" class="search-icon">
             <i class="fas fa-search"></i>
           </button>
+          <a href="#search-with-voice" target="_blank">
+            <i class="fas fa-microphone"></i>
+          </a>
         </form>
       </div>
-      <div class="profile-links"></div>
+      <div class="profile-links">
+        <a href="#upload-video" target="_blank">
+          <i class="fas fa-video"></i>
+        </a>
+        <a href="#more-menu">
+          <i class="fas fa-th"></i>
+        </a>
+        <a href="#notifications">
+          <i class="fas fa-bell"></i>
+        </a>
+      </div>
     </section>
   </body>
 </html>
