@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+  /* background-color: dimgray; */
 }
 /* general */
 i {
@@ -12,13 +13,46 @@ i {
   border: springgreen solid 1px;
 }
 
+.link {
+  text-decoration: none;
+}
+
 /* top nav */
+.top-nav {
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* youtube home links and menu */
 .yt-home-container {
   border: 1px green dashed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: inherit; */
+  width: 30vw;
 }
+
+.yt-home-container a {
+  display: block;
+}
+/* searchbar top */
 .big-searchbar-container {
   border: 1px blue dashed;
 }
+/* account links */
 .profile-links {
   border: 1px pink dashed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profile-pic img {
+  width: 2em;
+  height: 2em;
+  border: steelblue solid 1px;
+  border-radius: 50%;
 }
