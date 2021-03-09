@@ -17,7 +17,7 @@ i {
 .link {
   text-decoration: none;
 }
-
+/* ---------------------------- */
 /* top nav */
 .top-nav {
   display: flex;
@@ -63,3 +63,5 @@ i {
   border-radius: 50%;
   display: block;
 }
+/* ---------------------------- */
+/* side menu */
