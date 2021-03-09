@@ -6,6 +6,7 @@
   /* background-color: dimgray; */
 }
 /* general */
+
 i {
   color: slategray;
   /* width: 2em;
@@ -23,9 +24,10 @@ a {
 .top-nav {
   display: flex;
   width: 100vw;
-  height: 15vh;
+  height: 7vh;
   justify-content: space-between;
   align-items: center;
+  border: mediumblue 2px solid;
 }
 
 /* youtube home links and menu */
@@ -66,17 +68,27 @@ a {
 }
 /* ---------------------------- */
 /* main */
+.main {
+  border: mediumorchid 2px solid;
+  width: 100vw;
+}
+
 /* side menu */
 .side-menu {
   border: navy dashed 1px;
   display: flex;
   flex-direction: column;
   /* justify-content: space-evenly; */
+  width: 15vw;
 }
 .side-menu div {
   border: dashed darkviolet 1px;
   margin: 0.7em;
 }
+.side-menu div a {
+  display: flex;
+}
+
 /* drop down menu for "show more" */
 /* .dropd-menu {
   position: relative;
@@ -96,8 +108,21 @@ a {
   display: block;
 } */
 
+/* side menu divider */
+.side-menu-divider {
+  height: 2px;
+  width: 90%;
+  background-color: maroon;
+}
+
 /* ---------------------------- */
 /* main */
 /* header */
+header {
+  background-image: url(../img/oliver-spicer-fjord-new-zealand.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 25vh;
+}
 /* nav area for youtuber */
 /* clicked on videos */
