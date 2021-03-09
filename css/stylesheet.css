@@ -65,3 +65,22 @@ i {
 }
 /* ---------------------------- */
 /* side menu */
+
+/* drop down menu for "show more" */
+/* .dropd-menu {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  z-index: 1;
+  background-color: lightcyan;
+  box-shadow: mediumvioletred 0 5px 10px 0;
+}
+
+.dropd-menu a:hover .dropdown-content {
+  display: block;
+} */
