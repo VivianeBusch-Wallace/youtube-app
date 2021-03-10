@@ -153,7 +153,7 @@ no change, need pseudo element like with checkbox? */
 .side-menu {
   display: flex;
   flex-direction: column;
-  width: 17vw;
+  width: 15%;
   background-color: var(--gray);
 }
 .icon-wrapper {
@@ -225,7 +225,7 @@ no change, need pseudo element like with checkbox? */
 .youtuber-main {
   display: flex;
   flex-direction: column;
-  width: 83vw;
+  width: 85%;
 }
 /* header */
 header {
@@ -327,7 +327,7 @@ h3 {
 .video p {
   margin: 0.5rem 1rem 1rem 0rem;
 }
-/* .video p:first-child */
+/* .video p:first-child does not work, why? */
 .video-title {
   color: white;
   font-weight: bold;
