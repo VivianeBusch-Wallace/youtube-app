@@ -32,6 +32,9 @@ a:active {
 a:visited {
   color: none;
 }
+.superscript {
+  font-size: 0.6rem;
+}
 
 li {
   list-style: none;
@@ -51,7 +54,7 @@ li {
 /* youtube home links and menu */
 .yt-home-container,
 .yt-home-link-container a {
-  border: 1px green dashed;
+  /* border: 1px green dashed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,13 +62,16 @@ li {
   /* width: 30vw; */
 }
 .yt-home-container {
-  margin-left: 2vw;
+  margin-left: 3vw;
 }
 /* .yt-home-link-container a {
   border: lightcoral solid 1px;
   display: flex;
   justify-content: space-between;
 } */
+.fa-youtube {
+  color: red;
+}
 
 /* searchbar top */
 .big-searchbar-container {
@@ -76,7 +82,6 @@ li {
   width: 40vw;
 } */
 .searchbar {
-  /* display: inline-block; */
   width: 30rem;
 }
 
