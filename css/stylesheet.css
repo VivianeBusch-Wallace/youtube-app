@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
   color: var(--light-gray);
 }
 /* general */
@@ -316,14 +316,20 @@ h3 {
   flex-wrap: wrap;
   margin: 1rem 2rem;
 }
-.video {
-  width: 19%;
-  margin: 0.5rem 0.2rem;
-}
 .video img {
+  width: 98%;
+  height: 50%;
+}
+.video {
+  width: 20%;
+  height: 27vh;
+  /* overflow: hidden; */
+}
+/* .video img {
   height: auto;
   width: 100%;
-}
+  overflow: hidden;
+} */
 .video p {
   margin: 0.5rem 1rem 1rem 0rem;
 }
