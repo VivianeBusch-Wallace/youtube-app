@@ -54,7 +54,7 @@ li {
   height: 7vh;
   justify-content: space-between;
   align-items: center;
-  border: mediumblue 2px solid;
+  /* border: mediumblue 2px solid; */
 }
 
 /* youtube home links and menu */
@@ -140,7 +140,7 @@ no change, need pseudo element like with checkbox? */
 /* ---------------------------- */
 /* main */
 .main {
-  border: mediumorchid 2px solid;
+  /* border: mediumorchid 2px solid; */
   width: 100vw;
   display: flex;
   /* justify-content: flex-start; */
@@ -249,13 +249,13 @@ header {
 }
 /* nav area for youtuber */
 .nav-area {
-  border: tomato 1px solid;
-  background-color: var(--gray);
+  /* border: tomato 1px solid; */
+  background-color: var(--darker-gray);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em 3rem 0.5em 2rem;
+  padding: 1em 3rem 0.5em 2rem;
 }
 .youtuber {
   display: flex;
@@ -291,9 +291,6 @@ header {
 .youtuber-name p {
   font-size: 0.8rem;
 }
-.sub-button-wrapper {
-  border: yellow 1px dashed;
-}
 nav ul {
   text-transform: uppercase;
   display: flex;
@@ -302,7 +299,7 @@ nav ul {
   /* align-items: center; */
 }
 nav ul li {
-  border: orange 1px solid;
+  /* border: orange 1px solid; */
   /* text-align: center; */
   padding: 0.5rem 2rem;
   display: flex;
@@ -313,6 +310,14 @@ nav ul li {
 nav a,
 nav button i {
   font-size: 0.8rem;
+}
+.subscribe-btn {
+  background-color: red;
+  padding: 0.5rem 0.7rem;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
 }
 .video-selector {
   border-bottom: 2px solid var(--light-gray);
