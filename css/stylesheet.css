@@ -6,6 +6,10 @@
   /* background-color: dimgray; */
 }
 /* general */
+:root {
+  --main-width: 85vw;
+  --side-menu-width: 15vw;
+}
 
 i {
   color: slategray;
@@ -155,4 +159,25 @@ header {
   height: 25vh;
 }
 /* nav area for youtuber */
+.nav-area {
+  border: tomato 1px solid;
+}
+
 /* clicked on videos */
+.videos {
+  border: yellowgreen 2px solid;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+.videos-container {
+  border: tomato dashed 1px;
+  width: 85vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video img {
+  height: 10rem;
+  width: auto;
+}
