@@ -18,7 +18,7 @@ i {
   /* width: 2em;
   height: 2em; */
   border: springgreen solid 1px;
-  margin: 0 0.5rem;
+  margin: 0 0.6rem;
 }
 
 a {
@@ -58,8 +58,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: inherit; */
-  /* width: 30vw; */
 }
 .yt-home-container {
   margin-left: 3vw;
@@ -71,18 +69,24 @@ li {
 } */
 .fa-youtube {
   color: red;
+  /* margin-left: none !important; */
 }
 
 /* searchbar top */
-.big-searchbar-container {
+/* .big-searchbar-container {
   border: 1px blue dashed;
   width: auto;
-}
+} */
 /* .big-searchbar-container form {
   width: 40vw;
 } */
 .searchbar {
   width: 30rem;
+  /* outline-style: none; */
+  /* outline-color: none; */
+  background-color: rgb(31, 31, 32);
+  border: rgb(31, 31, 32) 1px solid;
+  /* box-shadow: none; */
 }
 
 /* account links */
