@@ -133,7 +133,7 @@ no change, need pseudo element like with checkbox? */
 .profile-pic img {
   width: 1.1em;
   height: 1.1em;
-  border: steelblue solid 1px;
+  /* border: steelblue solid 1px; */
   border-radius: 50%;
   display: block;
 }
@@ -152,7 +152,7 @@ no change, need pseudo element like with checkbox? */
   /* border: navy dashed 1px; */
   display: flex;
   flex-direction: column;
-  width: 15vw;
+  width: 17vw;
   background-color: var(--gray);
 }
 /* .menu-options {
@@ -238,7 +238,7 @@ no change, need pseudo element like with checkbox? */
   /* justify-content: center; */
   /* align-items: center; */
   width: 75vw;
-  border: mediumseagreen 2px solid;
+  /* border: mediumseagreen 2px solid; */
 }
 /* header */
 header {
@@ -251,14 +251,35 @@ header {
 .nav-area {
   border: tomato 1px solid;
   background-color: var(--darker-gray);
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
-nav {
+.youtuber {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: turquoise dashed 1px;
+}
+#youtuber-pic {
+  height: 5rem;
+  width: 5rem;
+}
+.youtuber-name {
+  border: tomato dashed 1px;
+}
+nav ul {
   text-transform: uppercase;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  /* align-items: center; */
 }
 
 /* clicked on videos */
 .videos {
-  border: yellowgreen 2px solid;
+  /* border: yellowgreen 2px solid; */
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
