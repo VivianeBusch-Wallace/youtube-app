@@ -313,10 +313,13 @@ nav ul li {
 nav a,
 nav button i {
   font-size: 0.8rem;
-  background-color: none;
 }
 .video-selector {
   border-bottom: 2px solid var(--light-gray);
+}
+.search-icon-youtuber {
+  background-color: var(--gray);
+  border: none;
 }
 
 /* videos from selection*/
