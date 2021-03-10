@@ -67,7 +67,16 @@ li {
 /* searchbar top */
 .big-searchbar-container {
   border: 1px blue dashed;
+  width: auto;
 }
+/* .big-searchbar-container form {
+  width: 40vw;
+} */
+input[type="text"] {
+  /* display: inline-block; */
+  width: 30rem;
+}
+
 /* account links */
 .account-nav {
   border: 1px pink dashed;
