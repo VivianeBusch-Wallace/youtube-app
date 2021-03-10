@@ -10,7 +10,9 @@
 :root {
   --main-width: 85vw;
   --side-menu-width: 15vw;
-  --light-gray: rgb(189, 189, 189);
+  --light-light-gray: rgb(214, 213, 213);
+  --light-gray: rgb(177, 177, 177);
+  --between-light-dark-gray: var(--between-light-dark-gray);
   --gray: rgb(31, 31, 32);
   --darker-gray: rgb(24, 24, 24);
   --darkest-gray: rgb(17, 17, 17);
@@ -86,20 +88,22 @@ li {
 check to find out why this does not work */
 
 /* searchbar top */
-/* .big-searchbar-container {
-  border: 1px blue dashed;
-  width: auto;
-} */
-/* .big-searchbar-container form {
-  width: 40vw;
-} */
+.big-searchbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.big-searchbar-container form {
+  /* width: 40vw; */
+  border: var(--between-light-dark-gray) 1px solid;
+}
 .searchbar {
   width: 30rem;
   /* outline-style: none; */
   /* outline-color: none; */
   background-color: var(--gray);
-  border: var(--gray) 1px solid;
   padding: 0.3rem;
+  border: none;
   /* border-radius: none; */
   /* box-shadow: none; */
 }
@@ -111,7 +115,7 @@ no change, need pseudo element like with checkbox? */
 .search-icon {
   /* border-radius: none; */
   border: var(--gray) 1px solid;
-  background-color: var(--gray);
+  background-color: var(--between-light-dark-gray);
   /* background-blend-mode: lighten; */
   padding: 0.3rem;
 }
@@ -183,9 +187,11 @@ no change, need pseudo element like with checkbox? */
 
 /* side menu divider */
 .side-menu-divider {
-  height: 2px;
-  width: 90%;
-  background-color: maroon;
+  height: 1px;
+  margin-left: 0rem !important;
+  /* width: 90%; */
+  background-color: var(--between-light-dark-gray);
+  /* align-self: left; */
 }
 
 /* subscriptions*/
