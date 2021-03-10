@@ -255,6 +255,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1em 3rem 0.5em 2rem;
 }
 .youtuber {
   display: flex;
@@ -286,8 +287,16 @@ nav ul {
   text-transform: uppercase;
   display: flex;
   /* flex-direction: row; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* align-items: center; */
+}
+nav ul li {
+  border: orange 1px solid;
+  /* text-align: center; */
+  padding: 0.5rem 1rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 /* clicked on videos */
@@ -297,6 +306,7 @@ nav ul {
   /* flex-direction: column; */
   flex-wrap: wrap;
   /* background-color: var(--darkest-gray); */
+  margin: 1em 3rem 0.5em 2rem;
 }
 .videos-container {
   border: tomato dashed 1px;
