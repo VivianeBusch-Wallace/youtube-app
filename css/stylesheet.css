@@ -4,15 +4,19 @@
   padding: 0;
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: var(--darkest-gray);
+  /* background-color: var(--darkest-gray); */
   color: white;
 }
 /* general */
 :root {
   --main-width: 85vw;
   --side-menu-width: 15vw;
-  --darker-gray: rgb(31, 31, 32);
-  --darkest-gray: rgb(5, 5, 5);
+  --gray: rgb(31, 31, 32);
+  --darker-gray: rgb(24, 24, 24);
+  --darkest-gray: rgb(17, 17, 17);
+}
+body {
+  background-color: var(--darkest-gray);
 }
 
 i {
@@ -62,7 +66,7 @@ li {
   align-items: center;
 }
 .yt-home-container {
-  margin-left: 3vw;
+  margin-left: 1vw;
 }
 /* .yt-home-link-container a {
   border: lightcoral solid 1px;
@@ -86,8 +90,9 @@ li {
   width: 30rem;
   /* outline-style: none; */
   /* outline-color: none; */
-  background-color: var(--darker-gray);
-  border: var(--darker-gray) 1px solid;
+  background-color: var(--gray);
+  border: var(--gray) 1px solid;
+  padding: 0.3rem;
   /* border-radius: none; */
   /* box-shadow: none; */
 }
@@ -98,14 +103,15 @@ li {
 no change, need pseudo element like with checkbox? */
 .search-icon {
   /* border-radius: none; */
-  border: var(--darker-gray) 1px solid;
-  background-color: var(--darker-gray);
+  border: var(--gray) 1px solid;
+  background-color: var(--gray);
   /* background-blend-mode: lighten; */
+  padding: 0.3rem;
 }
 
 /* account links */
 .account-nav {
-  border: 1px pink dashed;
+  /* border: 1px pink dashed; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -134,15 +140,19 @@ no change, need pseudo element like with checkbox? */
   flex-direction: column;
   /* justify-content: space-evenly; */
   width: 15vw;
-  background-color: var(--darker-gray);
-  margin-left: 2vw;
+  background-color: var(--gray);
 }
-.side-menu div {
-  border: dashed darkviolet 1px;
+.side-menu div,
+.side-menu h2,
+.side-menu img {
+  /* border: dashed darkviolet 1px; */
   margin: 0.7em;
 }
 .side-menu div a {
   display: flex;
+}
+.side-menu h2 {
+  text-transform: uppercase;
 }
 
 /* drop down menu for "show more" */
@@ -198,6 +208,10 @@ header {
 /* nav area for youtuber */
 .nav-area {
   border: tomato 1px solid;
+  background-color: var(--darker-gray);
+}
+nav {
+  text-transform: uppercase;
 }
 
 /* clicked on videos */
@@ -206,6 +220,7 @@ header {
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
+  /* background-color: var(--darkest-gray); */
 }
 .videos-container {
   border: tomato dashed 1px;
