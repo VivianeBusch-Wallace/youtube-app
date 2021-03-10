@@ -8,8 +8,6 @@
 }
 /* general */
 :root {
-  --main-width: 85vw;
-  --side-menu-width: 15vw;
   --light-light-gray: rgb(214, 213, 213);
   --light-gray: rgb(177, 177, 177);
   --between-light-dark-gray: rgb(70, 70, 70);
@@ -54,7 +52,6 @@ li {
   height: 7vh;
   justify-content: space-between;
   align-items: center;
-  /* border: mediumblue 2px solid; */
   background-color: var(--gray);
 }
 /* youtube home links and menu */
@@ -143,50 +140,37 @@ no change, need pseudo element like with checkbox? */
   border-radius: 50%;
   display: block;
   margin-left: 0.3rem;
+  margin-right: 1rem;
 }
 /* ---------------------------- */
 /* main */
 .main {
-  /* border: mediumorchid 2px solid; */
   width: 100vw;
   display: flex;
-  /* justify-content: flex-start; */
-  /* align-items: flex-start; */
 }
 
 /* side menu general*/
 .side-menu {
-  /* border: navy dashed 1px; */
   display: flex;
   flex-direction: column;
   width: 17vw;
   background-color: var(--gray);
 }
-/* .menu-options {
-  border: yellow solid 1px;
-} */
 .icon-wrapper {
   width: 3.5rem;
-  /* border: tomato 2px solid; */
 }
 .menu-options i {
-  /* border-right: springgreen 1px solid; */
   margin-right: 2rem;
 }
 .menu-options,
 .side-menu h2,
 .side-menu img {
-  /* border: dashed darkviolet 1px; */
   margin: 0.7em;
 }
 .side-menu div a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* border: hotpink dashed 1px; */
-}
-.menu-options p {
-  /* border-left: springgreen solid 1px; */
 }
 
 /* drop down menu for "show more" */
@@ -234,7 +218,6 @@ no change, need pseudo element like with checkbox? */
 .menu-options img {
   height: auto;
   width: 4rem;
-  /* border-radius: 50%; */
 }
 
 /* ---------------------------- */
@@ -242,10 +225,7 @@ no change, need pseudo element like with checkbox? */
 .youtuber-main {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  width: 75vw;
-  /* border: mediumseagreen 2px solid; */
+  width: 83vw;
 }
 /* header */
 header {
@@ -256,7 +236,6 @@ header {
 }
 /* nav area for youtuber */
 .nav-area {
-  /* border: tomato 1px solid; */
   background-color: var(--darker-gray);
   display: flex;
   flex-direction: column;
@@ -266,14 +245,11 @@ header {
 }
 .youtuber {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: space-between;
-  /* border: turquoise dashed 1px; */
   width: 90%;
 }
 .youtuber-profile {
-  /* border: violet 1px solid; */
   display: flex;
 }
 #youtuber-pic {
@@ -281,7 +257,6 @@ header {
   width: 4.6rem;
 }
 .youtuber-name {
-  /* border: tomato dashed 1px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,18 +276,11 @@ header {
 nav ul {
   text-transform: uppercase;
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
 }
 nav ul li {
-  /* border: orange 1px solid; */
-  /* text-align: center; */
   padding: 0.5rem 2rem;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  /* font-size: 0.6rem; */
 }
 nav a,
 nav button i {
@@ -336,20 +304,31 @@ nav button i {
 
 /* videos from selection*/
 .videos {
-  /* border: yellowgreen 2px solid; */
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
-  /* background-color: var(--darkest-gray); */
   margin: 1em 3rem 0.5em 2rem;
 }
+h3 {
+  margin: 1rem 2rem;
+}
 .videos-container {
-  border: tomato dashed 1px;
-  width: 85vw;
   display: flex;
   flex-wrap: wrap;
+  margin: 1rem 2rem;
+}
+.video {
+  width: 19%;
+  margin: 0.5rem 0.2rem;
 }
 .video img {
-  height: 10rem;
-  width: auto;
+  height: auto;
+  width: 100%;
+}
+.video p {
+  margin: 0.5rem 1rem 1rem 0rem;
+}
+/* .video p:first-child */
+.video-title {
+  color: white;
+  font-weight: bold;
 }
