@@ -12,7 +12,7 @@
   --side-menu-width: 15vw;
   --light-light-gray: rgb(214, 213, 213);
   --light-gray: rgb(177, 177, 177);
-  --between-light-dark-gray: var(--between-light-dark-gray);
+  --between-light-dark-gray: rgb(70, 70, 70);
   --gray: rgb(31, 31, 32);
   --darker-gray: rgb(24, 24, 24);
   --darkest-gray: rgb(17, 17, 17);
@@ -24,6 +24,7 @@ body {
 i {
   /* border: springgreen solid 1px; */
   margin: 0 0.6rem;
+  font-size: 1.1rem;
 }
 
 a {
@@ -104,6 +105,8 @@ check to find out why this does not work */
   background-color: var(--gray);
   padding: 0.3rem;
   border: none;
+  /* outline: none; */
+  /* outline-color: var(--between-light-dark-gray); */
   /* border-radius: none; */
   /* box-shadow: none; */
 }
@@ -144,7 +147,7 @@ no change, need pseudo element like with checkbox? */
   /* align-items: flex-start; */
 }
 
-/* side menu */
+/* side menu general*/
 .side-menu {
   border: navy dashed 1px;
   display: flex;
@@ -153,7 +156,18 @@ no change, need pseudo element like with checkbox? */
   width: 15vw;
   background-color: var(--gray);
 }
-.side-menu div,
+.menu-options {
+  border: yellow solid 1px;
+}
+.icon-wrapper {
+  width: 3rem;
+  border: tomato 2px solid;
+}
+.menu-options i {
+  border-right: springgreen 1px solid;
+  margin-right: 2rem;
+}
+.menu-options,
 .side-menu h2,
 .side-menu img {
   /* border: dashed darkviolet 1px; */
@@ -161,9 +175,12 @@ no change, need pseudo element like with checkbox? */
 }
 .side-menu div a {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: hotpink dashed 1px;
 }
-.side-menu h2 {
-  text-transform: uppercase;
+.menu-options p {
+  border-left: springgreen solid 1px;
 }
 
 /* drop down menu for "show more" */
@@ -195,10 +212,24 @@ no change, need pseudo element like with checkbox? */
 }
 
 /* subscriptions*/
-.menu-options img {
-  height: 3em;
-  width: auto;
+.side-menu h2 {
+  text-transform: uppercase;
+}
+.image-wrapper {
+  border: greenyellow solid 1px;
   border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+.menu-options img {
+  height: auto;
+  width: 4rem;
+  /* border-radius: 50%; */
 }
 
 /* ---------------------------- */
