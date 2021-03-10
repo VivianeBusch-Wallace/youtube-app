@@ -57,7 +57,6 @@ li {
   /* border: mediumblue 2px solid; */
   background-color: var(--gray);
 }
-
 /* youtube home links and menu */
 .yt-home-container,
 .yt-home-link-container a {
@@ -69,11 +68,14 @@ li {
 .yt-home-container {
   margin-left: 1vw;
 }
-/* .yt-home-link-container a {
-  border: lightcoral solid 1px;
-  display: flex;
-  justify-content: space-between;
-} */
+
+.fa-bars,
+.yt-home-link-container a p,
+.fa-microphone,
+.account-links i {
+  /* border: lightcoral solid 1px; */
+  color: white;
+}
 .fa-youtube {
   color: red;
   /* margin-left: none !important; */
