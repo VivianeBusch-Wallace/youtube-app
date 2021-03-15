@@ -15,6 +15,7 @@
   --darkest-gray: rgb(17, 17, 17);
   font-size: 16px;
 }
+
 body {
   background-color: var(--darkest-gray);
 }
@@ -37,7 +38,6 @@ a:visited {
 .superscript {
   font-size: 0.6rem;
 }
-
 li {
   list-style: none;
 }
@@ -52,7 +52,7 @@ li {
   align-items: center;
   background-color: var(--gray);
 }
-/* youtube home links and menu */
+/* youtube home links and menu (top left corner) */
 .yt-home-container,
 .yt-home-link-container a {
   display: flex;
@@ -62,7 +62,6 @@ li {
 .yt-home-container {
   margin-left: 1vw;
 }
-
 .fa-bars,
 .yt-home-link-container a p,
 .fa-microphone,
@@ -94,15 +93,9 @@ check to find out why this does not work */
 }
 .searchbar {
   width: 30rem;
-  /* outline-style: none; */
-  /* outline-color: none; */
   background-color: var(--gray);
   padding: 0.3rem;
   border: none;
-  /* outline: none; */
-  /* outline-color: var(--between-light-dark-gray); */
-  /* border-radius: none; */
-  /* box-shadow: none; */
 }
 /* .searchbar:active {
   border: violet solid 1px;
@@ -110,14 +103,12 @@ check to find out why this does not work */
 }
 no change, need pseudo element like with checkbox? */
 .search-icon {
-  /* border-radius: none; */
   border: var(--gray) 1px solid;
   background-color: var(--between-light-dark-gray);
-  /* background-blend-mode: lighten; */
   padding: 0.3rem;
 }
 
-/* account links */
+/* user account links (top right corner) */
 .account-nav {
   display: flex;
   justify-content: space-evenly;
@@ -179,7 +170,6 @@ no change, need pseudo element like with checkbox? */
   background-color: lightcyan;
   box-shadow: mediumvioletred 0 5px 10px 0;
 }
-
 .dropd-menu a:hover .dropdown-content {
   display: block;
 } */
@@ -192,7 +182,7 @@ no change, need pseudo element like with checkbox? */
   background-color: var(--between-light-dark-gray);
 }
 
-/* subscriptions*/
+/* subscriptions */
 .side-menu h2 {
   text-transform: uppercase;
 }
@@ -214,42 +204,47 @@ no change, need pseudo element like with checkbox? */
 
 /* ---------------------------- */
 /* main */
-.youtuber-main {
+/* youtuber channel */
+/* general */
+.youtuber-main,
+.nav-area,
+.youtuber,
+.youtuber-profile,
+.youtuber-name,
+nav ul,
+.videos,
+.videos-container {
   display: flex;
+}
+.youtuber-main {
   flex-direction: column;
   width: 85%;
 }
-/* header */
+/* header of youtuber channel */
 header {
   background-image: url(../img/oliver-spicer-fjord-new-zealand.jpg);
   background-position: center;
   background-size: cover;
   height: 25vh;
 }
-/* nav area for youtuber */
+/* navigation area for youtuber */
 .nav-area {
   background-color: var(--darker-gray);
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em 3rem 0.5em 2rem;
 }
 .youtuber {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
-}
-.youtuber-profile {
-  display: flex;
 }
 #youtuber-pic {
   height: 4.6rem;
   width: 4.6rem;
 }
 .youtuber-name {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -265,9 +260,9 @@ header {
 .youtuber-name p {
   font-size: 0.8rem;
 }
+/* youtuber channel navigation */
 nav ul {
   text-transform: uppercase;
-  display: flex;
 }
 nav ul li {
   padding: 0.5rem 2rem;
@@ -296,7 +291,6 @@ nav button i {
 
 /* videos from selection*/
 .videos {
-  display: flex;
   flex-wrap: wrap;
   margin: 1em 3rem 0.5em 2rem;
 }
@@ -304,7 +298,6 @@ h3 {
   margin: 1rem 2rem;
 }
 .videos-container {
-  display: flex;
   flex-wrap: wrap;
   margin: 1rem 2rem;
 }
@@ -315,13 +308,7 @@ h3 {
 .video {
   width: 20%;
   height: 27vh;
-  /* overflow: hidden; */
 }
-/* .video img {
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-} */
 .video p {
   margin: 0.5rem 1rem 1rem 0rem;
 }
