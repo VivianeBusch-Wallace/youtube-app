@@ -132,11 +132,11 @@
                 <i class="fas fa-caret-down"></i>
             </div>
             <p>Show more</p>
-            <!-- <div class="dropdown-content">
-              <a href="#link1">Link1</a>
-              <a href="#link2">Link2</a>
-              <a href="#link3">Link3</a>
-            </div> -->
+            <div class="dropdown-content">
+              <a href="#link1">Option1</a>
+              <a href="#link2">Option2</a>
+              <a href="#link3">Option3</a>
+            </div>
           </a>
         </div>
         <div class="side-menu-divider"></div>
@@ -205,15 +205,15 @@
             <p>DW Documentary</p>
           </a>
         </div>
-        <div class="menu-options dropd-menu">
+        <div class="menu-options dropd-menu-subs">
           <a href="#show-more">
             <i class="fas fa-caret-down"></i>
             <p>Show ### more</p>
-            <!-- <div class="dropdown-content">
-              <a href="#link1">Link1</a>
-              <a href="#link2">Link2</a>
-              <a href="#link3">Link3</a>
-            </div> -->
+            <div class="dropdown-content-subs">
+              <a href="#link1">Sub1</a>
+              <a href="#link2">Sub2</a>
+              <a href="#link3">Sub3</a>
+            </div>
           </a>
         </div>
       </div>
@@ -288,6 +288,7 @@
           <div class="videos-container">
             <div class="video">
               <img src="./img/street.jpg" alt="video1"/>
+              <p>time:stamp</p>
               <p class="video-title">Off the Road by Musician</p>
               <p>67K views - 1 week ago</p>
             </div>
@@ -339,5 +340,27 @@
         </div>
       </div>
     </section>
+
+<script>
+  let clicked = false;
+  document.querySelector(".dropd-menu a").addEventListener("click", ()=>{
+    clicked = !clicked;
+    console.log(clicked);
+    if (clicked) {document.querySelector(".dropdown-content").style.cssText = "display: block; background-color: white; "
+    }else {
+document.querySelector(".dropdown-content").style.cssText = "display:none;"
+    }
+  })
+
+  document.querySelector(".dropd-menu-subs a").addEventListener("click", ()=>{
+    clicked = !clicked;
+    console.log(clicked);
+    if (clicked) {document.querySelector(".dropdown-content-subs").style.cssText = "display: block; background-color: white; "
+    }else {
+document.querySelector(".dropdown-content-subs").style.cssText = "display:none;"
+    }
+  })
+</script>
+
   </body>
 </html>
