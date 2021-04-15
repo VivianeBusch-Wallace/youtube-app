@@ -1,25 +1,24 @@
-/* videos from selection*/
+/* container of videos-container (the selected frame of the channel nav selection videos) */
 .videos {
   flex-wrap: wrap;
   margin: 1em 3rem 0.5em 2rem;
 }
-h3 {
-  margin: 1rem 2rem;
-}
+// container for all individual videos
 .videos-container {
   flex-wrap: wrap;
   margin: 1rem 2rem;
 }
-.video img {
-  width: 98%;
-  height: 50%;
-}
+// individual video containers
 .video {
   width: 20%;
   height: 35vh;
-}
-.video p {
-  margin: 0.5rem 1rem 1rem 0rem;
+  img {
+    width: 98%;
+    height: 50%;
+  }
+  p {
+    margin: 0.5rem 1rem 1rem 0rem;
+  }
 }
 /* .video p:first-child does not work, why? */
 .video-title {
