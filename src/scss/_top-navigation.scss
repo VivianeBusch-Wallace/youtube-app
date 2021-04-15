@@ -1,23 +1,3 @@
-@mixin flex-center-all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@mixin flex-space-evenly {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-@mixin flex-space-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-// @mixin color {
-//     color: white
-// }
-
 /* navigation in the top */
 .top-nav {
   @include flex-space-between();
@@ -27,20 +7,20 @@
 }
 
 /* youtube home links and menu (top left corner) */
-.yt-home-link-container a {
-  @include flex-space-between();
-}
-
+// container of youtube home area sidebar
 .yt-home-container {
   @include flex-space-between();
   margin-left: 1vw;
 }
-.fa-bars,
-.yt-home-link-container a p,
-.fa-microphone,
-.account-links i {
-  color: white;
+.yt-home-link-container {
+  a {
+    @include flex-space-between();
+    p {
+      color: white;
+    }
+  }
 }
+// youtube logo icon
 .fa-youtube {
   color: red;
 }
@@ -55,7 +35,22 @@
 } 
 check to find out why this does not work */
 
-/* searchbar top */
+// The superscript of the Youtube logo in the top left corner
+.superscript {
+  font-size: 0.6rem;
+}
+hamburger menu and microphone icon .fa-bars,
+.fa-microphone {
+  color: white;
+}
+// account navigation options
+.account-links {
+  i {
+    color: white;
+  }
+}
+
+// searchbar top
 .big-searchbar-container {
   @include flex-center-all();
   form {
@@ -73,19 +68,22 @@ check to find out why this does not work */
   border-radius: none;
 }
 no change, need pseudo element like with checkbox? */
+
+// search icon of searchbar
 .search-icon {
   border: $gray 1px solid;
   background-color: $between-light-dark-gray;
   padding: 0.3rem;
 }
 
-/* user account links (top right corner) */
+// user account links (top right corner)
 .account-nav {
   @include flex-space-evenly();
   div {
     margin: 0 0.3rem;
   }
 }
+// account image of user
 .profile-pic img {
   width: 1.8em;
   height: 1.8em;

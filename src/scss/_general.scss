@@ -45,3 +45,21 @@ a:visited {
 li {
   list-style: none;
 }
+
+// Mixins
+// flex mixins
+@mixin flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
