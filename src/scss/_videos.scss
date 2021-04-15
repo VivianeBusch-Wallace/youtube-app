@@ -1,0 +1,28 @@
+/* videos from selection*/
+.videos {
+  flex-wrap: wrap;
+  margin: 1em 3rem 0.5em 2rem;
+}
+h3 {
+  margin: 1rem 2rem;
+}
+.videos-container {
+  flex-wrap: wrap;
+  margin: 1rem 2rem;
+}
+.video img {
+  width: 98%;
+  height: 50%;
+}
+.video {
+  width: 20%;
+  height: 35vh;
+}
+.video p {
+  margin: 0.5rem 1rem 1rem 0rem;
+}
+/* .video p:first-child does not work, why? */
+.video-title {
+  color: white;
+  font-weight: bold;
+}

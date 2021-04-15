@@ -1,0 +1,85 @@
+/* main */
+/* youtuber channel */
+/* general */
+.youtuber-main,
+.nav-area,
+.youtuber,
+.youtuber-profile,
+.youtuber-name,
+nav ul,
+.videos,
+.videos-container {
+  display: flex;
+}
+.youtuber-main {
+  flex-direction: column;
+  width: 85%;
+}
+/* header of youtuber channel */
+header {
+  background-image: url(../img/oliver-spicer-fjord-new-zealand.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 25vh;
+}
+/* navigation area for youtuber */
+.nav-area {
+  background-color: $darker-gray);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 3rem 0.5em 2rem;
+}
+.youtuber {
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+#youtuber-pic {
+  height: 4.6rem;
+  width: 4.6rem;
+}
+.youtuber-name {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1.3rem;
+}
+.youtuber-name a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.fa-music {
+  font-size: 0.7rem;
+}
+.youtuber-name p {
+  font-size: 0.8rem;
+}
+/* youtuber channel navigation */
+nav ul {
+  text-transform: uppercase;
+}
+nav ul li {
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+nav a,
+nav button i {
+  font-size: 0.8rem;
+}
+.subscribe-btn {
+  background-color: red;
+  padding: 0.5rem 0.7rem;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.video-selector {
+  border-bottom: 2px solid $light-gray);
+}
+.search-icon-youtuber {
+  background-color: $gray);
+  border: none;
+}
