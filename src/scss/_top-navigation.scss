@@ -39,7 +39,8 @@ check to find out why this does not work */
 .superscript {
   font-size: 0.6rem;
 }
-hamburger menu and microphone icon .fa-bars,
+// hamburger menu and microphone icon
+.fa-bars,
 .fa-microphone {
   color: white;
 }
@@ -49,7 +50,6 @@ hamburger menu and microphone icon .fa-bars,
     color: white;
   }
 }
-
 // searchbar top
 .big-searchbar-container {
   @include flex-center-all();

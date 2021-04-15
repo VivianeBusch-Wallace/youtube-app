@@ -30,12 +30,12 @@ i {
 // All links
 a {
   text-decoration: none;
-}
-a:active {
-  color: yellow;
-}
-a:visited {
-  color: none;
+  &:active {
+    color: yellow;
+  }
+  &:visited {
+    color: none;
+  }
 }
 // All list items
 li {
