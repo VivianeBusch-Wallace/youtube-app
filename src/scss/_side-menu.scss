@@ -1,29 +1,34 @@
 /* side menu general*/
 .side-menu {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    background-color: $gray);
-  }
-  .icon-wrapper {
-    width: 3.5rem;
-  }
-  .menu-options i {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  background-color: $gray;
+}
+.icon-wrapper {
+  width: 3.5rem;
+}
+.menu-options {
+  margin: 0.7em;
+  i {
     margin-right: 2rem;
   }
-  .menu-options,
-  .side-menu h2,
-  .side-menu img {
+}
+.side-menu {
+  h2,
+  img {
     margin: 0.7em;
   }
-  .side-menu div a {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  div {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
-  
-  /* drop down menu for "show more" */
-  /* .dropd-menu {
+}
+/* drop down menu for "show more" */
+/* .dropd-menu {
     position: relative;
     display: inline-block;
   }
@@ -39,36 +44,36 @@
   .dropd-menu a:hover .dropdown-content {
     display: block;
   } */
-  
-  /* side menu divider */
-  .side-menu-divider {
-    height: 1px;
-    margin-left: 0rem !important;
-    width: 97%;
-    background-color: $between-light-dark-gray);
-  }
-  
-  /* subscriptions */
-  .side-menu h2 {
-    text-transform: uppercase;
-  }
-  .image-wrapper {
-    border: greenyellow solid 1px;
-    border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 1rem;
-  }
-  .menu-options img {
+
+/* side menu divider */
+.side-menu-divider {
+  height: 1px;
+  margin-left: 0rem !important;
+  width: 97%;
+  background-color: $between-light-dark-gray;
+}
+
+/* subscriptions */
+.side-menu h2 {
+  text-transform: uppercase;
+}
+.image-wrapper {
+  border: greenyellow solid 1px;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+.menu-options {
+  img {
     height: auto;
     width: 4rem;
   }
-
-
+}
 .dropdown-content,
 .dropdown-content-subs {
   display: none;
