@@ -1,73 +1,82 @@
 /* main */
 /* youtuber channel */
 /* general */
+// shared properties of youtuber channel
 .youtuber-main,
-.nav-area,
-.youtuber,
 .youtuber-profile,
 .youtuber-name,
-nav ul,
 .videos,
 .videos-container {
   display: flex;
 }
+// youtuber channel main area (incl. videos)
 .youtuber-main {
   flex-direction: column;
   width: 85%;
+  border: orchid 3px solid;
 }
-/* header of youtuber channel */
-header {
+// banner of youtuber channel
+.banner {
   background-image: url(../img/oliver-spicer-fjord-new-zealand.jpg);
   background-position: center;
   background-size: cover;
   height: 25vh;
 }
-/* navigation area for youtuber */
+// navigation area for youtuber
 .nav-area {
   background-color: $darker-gray;
+  @include flex-center-all();
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 1em 3rem 0.5em 2rem;
+  border: green 3px solid;
 }
 .youtuber {
-  align-items: center;
-  justify-content: space-between;
+  @include flex-space-between();
   width: 90%;
 }
+// youtuber profile picture
 #youtuber-pic {
   height: 4.6rem;
   width: 4.6rem;
 }
+// youtuber's name
 .youtuber-name {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   margin-left: 1.3rem;
 }
-.youtuber-name a {
-  font-size: 1.5rem;
-  font-weight: bold;
+.youtuber-name {
+  a {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 .fa-music {
   font-size: 0.7rem;
 }
-.youtuber-name p {
-  font-size: 0.8rem;
+.youtuber-name {
+  p {
+    font-size: 0.8rem;
+  }
 }
 /* youtuber channel navigation */
-nav ul {
-  text-transform: uppercase;
+nav {
+  ul {
+    text-transform: uppercase;
+    display: flex;
+  }
+  li {
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+  a,
+  i {
+    font-size: 0.8rem;
+  }
 }
-nav ul li {
-  padding: 0.5rem 2rem;
-  display: flex;
-  align-items: center;
-}
-nav a,
-nav button i {
-  font-size: 0.8rem;
-}
+// subscribe button
 .subscribe-btn {
   background-color: red;
   padding: 0.5rem 0.7rem;
@@ -76,9 +85,11 @@ nav button i {
   border-radius: 2px;
   text-transform: uppercase;
 }
+// selected navigation from channel nav
 .video-selector {
   border-bottom: 2px solid $light-gray;
 }
+// search in channel icon
 .search-icon-youtuber {
   background-color: $gray;
   border: none;
