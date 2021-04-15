@@ -1,10 +1,4 @@
 :root {
-  --light-light-gray: rgb(214, 213, 213);
-  --light-gray: rgb(177, 177, 177);
-  --between-light-dark-gray: rgb(70, 70, 70);
-  --gray: rgb(31, 31, 32);
-  --darker-gray: rgb(24, 24, 24);
-  --darkest-gray: rgb(17, 17, 17);
   font-size: 16px;
 }
 * {
@@ -12,11 +6,11 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--light-gray);
+  color: $light-gray;
 }
 // Body
 body {
-  background-color: var(--darkest-gray);
+  background-color: $darkest-gray;
 }
 // All icons
 i {
