@@ -13,7 +13,6 @@
 .youtuber-main {
   flex-direction: column;
   width: 85%;
-  border: orchid 3px solid;
 }
 // banner of youtuber channel
 .banner {
@@ -22,13 +21,50 @@
   background-size: cover;
   height: 25vh;
 }
-// navigation area for youtuber
+// text inside banner
+.action-text {
+  border: lightgreen 3px dashed;
+}
+// social media icons inside banner
+.social-media {
+  border: lavender 3px dotted;
+  display: flex;
+}
+// icons
+.facebook {
+  i {
+    color: blue;
+  }
+}
+.twitter {
+  i {
+    color: blue;
+  }
+}
+.instagram {
+  i {
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    // font-weight: 600; does not work on fontawesome icon
+    // &::before {
+    //   background: white;
+    //   font-size: 0.6rem;
+    //   z-index: -1;
+    // } does also not work
+  }
+}
+// general navigation area for youtuber
 .nav-area {
   background-color: $darker-gray;
   @include flex-center-all();
   flex-direction: column;
   padding: 1em 3rem 0.5em 2rem;
-  border: green 3px solid;
 }
 .youtuber {
   @include flex-space-between();
@@ -73,7 +109,7 @@ nav {
   }
   a,
   i {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 // subscribe button
@@ -91,6 +127,6 @@ nav {
 }
 // search in channel icon
 .search-icon-youtuber {
-  background-color: $gray;
+  background-color: inherit;
   border: none;
 }
