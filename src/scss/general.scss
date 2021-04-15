@@ -1,0 +1,44 @@
+:root {
+  --light-light-gray: rgb(214, 213, 213);
+  --light-gray: rgb(177, 177, 177);
+  --between-light-dark-gray: rgb(70, 70, 70);
+  --gray: rgb(31, 31, 32);
+  --darker-gray: rgb(24, 24, 24);
+  --darkest-gray: rgb(17, 17, 17);
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--light-gray);
+}
+// Body
+body {
+  background-color: var(--darkest-gray);
+}
+// All icons
+i {
+  /* border: springgreen solid 1px; */
+  margin: 0 0.6rem;
+  font-size: 1.1rem;
+}
+// All links
+a {
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+}
+a:visited {
+  color: none;
+}
+// The superscript of the Youtube logo in the top left corner
+.superscript {
+  font-size: 0.6rem;
+}
+// All list items
+li {
+  list-style: none;
+}
