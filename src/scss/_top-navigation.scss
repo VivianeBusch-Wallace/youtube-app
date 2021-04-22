@@ -85,15 +85,21 @@ no change, need pseudo element like with checkbox? */
 }
 // toggle switch for light and dark mode
 .toggle-switch-mode-container {
-}
-.mode-switch {
-  width: 2rem;
+  width: 5rem;
   height: 2rem;
-  border: greenyellow 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: tomato 1px dashed;
+}
+//label
+.mode-switch {
+  width: 4rem;
+  height: 2rem;
+  // border: greenyellow 1px solid;
   position: relative;
-  // Q: why pos rel?
   // display: inline-block;
-  // to hide the ugly checkbox:
+  // to hide the checkbox:
   input {
     // display: none;
     opacity: 0;
@@ -110,18 +116,77 @@ no change, need pseudo element like with checkbox? */
   bottom: 0;
   left: 0;
   background-color: #ccc;
-  height: 100%;
-  width: 100%;
+  height: 1rem;
+  width: 3rem;
+  border: darkorange 1px solid;
 }
 .slider::before {
   position: absolute;
   content: "";
-  height: 1rem;
-  width: 1rem;
+  height: 0.8rem;
+  width: 0.8rem;
   background-color: blue;
   border-radius: 100%;
 }
+input:checked + .slider {
+  background-color: lightsteelblue;
+}
+input:checked + .slider::before {
+  transform: translateX(2rem);
+}
+// -------------
 
+/* fancy checkbox */
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Hide the ugly html checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The switch */
+.switch {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  margin-left: 1rem;
+  border: 2px red dashed;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.5s;
+  border-radius: 5rem;
+  border: springgreen 1px solid;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  left: 0.25rem;
+  bottom: 0.35rem;
+  height: 1rem;
+  width: 1rem;
+  background-color: white;
+  border-radius: 100%;
+  border: rgb(46, 48, 204) 1px solid;
+}
+input:checked + .slider {
+  background-color: lightsteelblue;
+}
+input:checked + .slider::before {
+  transform: translateX(2.5rem);
+}
+
+// ------------
 // input {
 //   display: block;
 //   width: 10%;

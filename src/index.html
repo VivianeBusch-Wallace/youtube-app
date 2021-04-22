@@ -41,6 +41,13 @@
             <input type="checkbox">
             <span class="slider"></span>
           </label>
+          <section class="toggle">
+            <label class="toggle-lable">Want &nbsp; more info?</label>
+            <label class="switch">
+              <input type="checkbox" name="moreInfo" />
+              <span class="slider"></span>
+            </label>
+          </section>
         </div>
         <div class="account-links">
           <a href="#upload-video" target="_blank">
@@ -350,26 +357,7 @@
       </div>
     </section>
 
-<script>
-  let clicked = false;
-  document.querySelector(".dropd-menu a").addEventListener("click", ()=>{
-    clicked = !clicked;
-    console.log(clicked);
-    if (clicked) {document.querySelector(".dropdown-content").style.cssText = "display: block; background-color: white; "
-    }else {
-document.querySelector(".dropdown-content").style.cssText = "display:none;"
-    }
-  })
-
-  document.querySelector(".dropd-menu-subs a").addEventListener("click", ()=>{
-    clicked = !clicked;
-    console.log(clicked);
-    if (clicked) {document.querySelector(".dropdown-content-subs").style.cssText = "display: block; background-color: white; "
-    }else {
-document.querySelector(".dropdown-content-subs").style.cssText = "display:none;"
-    }
-  })
-</script>
+<script src="./script/index.js"></script>
 
   </body>
 </html>
