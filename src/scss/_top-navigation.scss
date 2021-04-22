@@ -83,6 +83,106 @@ no change, need pseudo element like with checkbox? */
     margin: 0 0.3rem;
   }
 }
+// toggle switch for light and dark mode
+.toggle-switch-mode-container {
+}
+.mode-switch {
+  width: 2rem;
+  height: 2rem;
+  border: greenyellow 1px solid;
+  position: relative;
+  // Q: why pos rel?
+  // display: inline-block;
+  // to hide the ugly checkbox:
+  input {
+    // display: none;
+    opacity: 0;
+    // Q: does it matter here if I have display none or opacity?
+    width: 0;
+    height: 0;
+  }
+}
+//the slider inside mode-switch
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ccc;
+  height: 100%;
+  width: 100%;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  background-color: blue;
+  border-radius: 100%;
+}
+
+// input {
+//   display: block;
+//   width: 10%;
+//   border-radius: 2rem;
+//   border: none;
+//   background-color: lightgray;
+// }
+// /* fancy checkbox */
+// .toggle {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// /* Hide the ugly html checkbox */
+// .switch input {
+//   opacity: 0;
+//   width: 0;
+//   height: 0;
+// }
+
+// /* The switch */
+// .switch {
+//   position: relative;
+//   width: 4rem;
+//   height: 2rem;
+//   margin-left: 1rem;
+//   border: 2px red dashed;
+// }
+
+// .slider {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   cursor: pointer;
+//   background-color: #ccc;
+//   transition: 0.2s;
+//   border-radius: 5rem;
+// }
+
+// .slider::before {
+//   position: absolute;
+//   content: "";
+//   left: 0.25rem;
+//   bottom: 0.35rem;
+//   height: 1rem;
+//   width: 1rem;
+//   background-color: white;
+//   border-radius: 100%;
+// }
+
+// input:checked + .slider {
+//   background-color: lightsteelblue;
+// }
+
+// input:checked + .slider::before {
+//   transform: translateX(2.5rem);
+// }
+
 // account image of user
 .profile-pic img {
   width: 1.8em;
