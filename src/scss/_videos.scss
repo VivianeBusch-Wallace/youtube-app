@@ -8,6 +8,8 @@ channel nav selection videos) */
 .videos-container {
   flex-wrap: wrap;
   margin: 1rem 2rem;
+  border: 3px red solid;
+  // width: 80vw;
 }
 // individual video containers
 .video {

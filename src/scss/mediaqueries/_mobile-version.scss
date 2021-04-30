@@ -1,0 +1,23 @@
+@media screen and (max-width: 375px) {
+  // top navigation area
+  .top-nav {
+    justify-content: space-between;
+    // everything that needed to disappear
+    form,
+    .youtube-title,
+    .fa-microphone,
+    .fa-bars,
+    .account-nav {
+      display: none;
+    }
+    // everything seen in mobile
+    .mobile-icons {
+      display: flex;
+    }
+    .mobile-youtuber-title,
+    .mobile-search-icon,
+    .mobile-three-dots {
+      display: block;
+    }
+  }
+}

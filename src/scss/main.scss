@@ -4,6 +4,11 @@
 @import "./side-menu";
 @import "./channel-info.scss";
 @import "./videos";
+
+// media queries
+@import "./mediaqueries/mobile-version";
+@import "./mediaqueries/tablet-version";
+
 // ---will remove below later
 @mixin flexSetup {
   display: flex;

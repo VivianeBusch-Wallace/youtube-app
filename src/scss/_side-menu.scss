@@ -56,6 +56,7 @@
 /* subscriptions */
 .side-menu h2 {
   text-transform: uppercase;
+  font-size: calc((100vw - 426px) / (768 - 400) + 15px);
 }
 .image-wrapper {
   border: greenyellow solid 1px;
